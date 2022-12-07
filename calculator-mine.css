@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#8491e6, #1a39f6);
+}
+#calculator{
+    height: 500px;
+    width: 350px;
+    background-color: rgb(32, 25, 25);
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    
+}
+#history{
+    height: 25%;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#value{
+    font-size: 50px;
+    font-weight: 700;
+    color: #1a39f6;
+    
+}
+#keyboard{
+    height: 75%;
+}
+#keyboard >.number,#keyboard >.operator{
+    float: left;
+    height: 25%;
+    width: 33.33%;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid black;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#keyboard >.number:hover,
+#keyboard >.operator:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+#keyboard >.number:active,
+#keyboard >.operator:active{
+    font-size: 10px;
+}
+#key-operator{
+    height: auto;
+    width: 60px;
+    display: flex;
+}
